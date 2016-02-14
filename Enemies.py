@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 from Enemy import *
 from Blast import *
+from Boss import *
 
 class Enemies:
     def __init__ (self):
@@ -18,6 +19,8 @@ class Enemies:
             i+=1
     def addNew(self,x,y):
         self.enemies.append(Enemy(x,y))
+    def addBoss(self,x,y):
+        self.enemies.append(Boss(x,y))
     def addBlast(self,x,y):
         self.blasts.append(Blast(x,y))
     def tick(self):
