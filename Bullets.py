@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 from Bullet import *
 
-class Ship:
+class Bullets:
     def __init__ (self):
         self.bullets=[]
     def draw(self, window):
